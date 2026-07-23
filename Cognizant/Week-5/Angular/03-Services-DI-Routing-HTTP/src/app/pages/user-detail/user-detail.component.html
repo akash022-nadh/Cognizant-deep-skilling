@@ -1,0 +1,8 @@
+<h2>User Detail</h2>
+<p>Came from: {{ referrer || 'direct link' }}</p>
+<p><strong>ID:</strong> {{ user.id }}</p>
+<p><strong>Email:</strong> {{ user.email }}</p>
+
+<label>Name</label>
+<input [(ngModel)]="editedName" name="editedName" />
+<p><small>Try editing the name, then navigating away - unsavedChangesGuard will prompt you.</small></p>
